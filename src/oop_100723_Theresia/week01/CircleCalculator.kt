@@ -18,4 +18,5 @@ fun checkSize(area: Double): String {
         "This is a Big Circle"
     else
         "This is a Small Circle"
+    println("Circle calculation complete")
 }
