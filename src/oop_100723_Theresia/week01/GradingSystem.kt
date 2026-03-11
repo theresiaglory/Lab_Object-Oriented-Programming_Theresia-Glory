@@ -1,4 +1,17 @@
-package oop_2602071234_Theresia.week01.oop_100723_Theresia.week01
+package oop_100723_Theresia.week01
 
-class GradingSystem {
+fun main() {
+
+    val score = 85
+
+    val grade = when {
+        score >= 85 -> "A"
+        score >= 70 -> "B"
+        score >= 60 -> "C"
+        score >= 50 -> "D"
+        else -> "E"
+    }
+
+    println("Score: $score")
+    println("Grade: $grade")
 }

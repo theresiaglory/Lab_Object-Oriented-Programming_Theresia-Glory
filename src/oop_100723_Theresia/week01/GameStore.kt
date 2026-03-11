@@ -1,4 +1,14 @@
-package oop_2602071234_Theresia.week01.oop_100723_Theresia.week01
+package oop_100723_Theresia.week01
 
-class GameStore {
+fun main() {
+
+    val gameName = "Minecraft"
+    val price = 300000
+    val discount = 0.2
+
+    val finalPrice = price - (price * discount)
+
+    println("Game: $gameName")
+    println("Original Price: $price")
+    println("Discounted Price: $finalPrice")
 }
