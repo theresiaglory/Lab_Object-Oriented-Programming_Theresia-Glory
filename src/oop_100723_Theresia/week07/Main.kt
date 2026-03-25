@@ -50,4 +50,12 @@ fun main() {
     for ((nama, nilai) in nilaiMap) {
         println("$nama -> $nilai")
     }
+
+    println("\n=== Sorting ===")
+
+    val sorted = mahasiswa.sortedByDescending { it.nilai }
+
+    sorted.forEach {
+        println("${it.nama} - ${it.nilai}")
+    }
 }
