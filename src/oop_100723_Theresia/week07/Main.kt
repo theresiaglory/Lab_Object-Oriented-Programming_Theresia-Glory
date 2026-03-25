@@ -1,5 +1,14 @@
 package oop_100723_Theresia.week07
 
+data class Mahasiswa(
+    val nama: String,
+    val nilai: Int
+)
+
+fun operasi(a: Int, b: Int, op: (Int, Int) -> Int): Int {
+    return op(a, b)
+}
+
 fun main() {
 
     println("=== List & Lambda ===")
@@ -25,6 +34,8 @@ fun main() {
     println("Daftar Nama:")
     namaSaja.forEach { println(it) }
 
+    // =========================
+
     println("\n=== Mutable List ===")
 
     val angka = mutableListOf(1, 2, 3)
@@ -34,11 +45,15 @@ fun main() {
 
     println(angka)
 
+    // =========================
+
     println("\n=== Set ===")
 
     val angkaSet = setOf(1, 2, 2, 3, 4, 4)
 
     println("Isi set: $angkaSet")
+
+    // =========================
 
     println("\n=== Map ===")
 
@@ -51,6 +66,8 @@ fun main() {
         println("$nama -> $nilai")
     }
 
+    // =========================
+
     println("\n=== Sorting ===")
 
     val sorted = mahasiswa.sortedByDescending { it.nilai }
@@ -58,4 +75,12 @@ fun main() {
     sorted.forEach {
         println("${it.nama} - ${it.nilai}")
     }
+
+    // =========================
+
+    println("\n=== Higher Order Function ===")
+
+    val hasil = operasi(5, 3) { x, y -> x + y }
+
+    println("Hasil: $hasil")
 }
