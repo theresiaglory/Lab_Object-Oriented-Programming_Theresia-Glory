@@ -33,4 +33,10 @@ fun main() {
     angka.remove(2)
 
     println(angka)
+
+    println("\n=== Set ===")
+
+    val angkaSet = setOf(1, 2, 2, 3, 4, 4)
+
+    println("Isi set: $angkaSet")
 }
