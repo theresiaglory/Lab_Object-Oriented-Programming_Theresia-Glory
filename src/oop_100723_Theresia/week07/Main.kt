@@ -1,8 +1,11 @@
 package oop_2602071234_Theresia.week01.oop_100723_Theresia.week07
 
 fun main() {
-    val client = NetworkClient.create("https://api.umn.ac.id")
-    println(client.baseUrl)
+    val u1 = User("Alex", 20)
+    val u2 = User("Alex", 20)
 
-    DatabaseManager.connect()
+    println(u1)
+    println(u2)
+
+    println(u1 == u2)
 }
