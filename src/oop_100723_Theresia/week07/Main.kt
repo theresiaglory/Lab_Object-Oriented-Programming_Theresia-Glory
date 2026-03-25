@@ -39,4 +39,15 @@ fun main() {
     val angkaSet = setOf(1, 2, 2, 3, 4, 4)
 
     println("Isi set: $angkaSet")
+
+    println("\n=== Map ===")
+
+    val nilaiMap = mapOf(
+        "Theresia" to 85,
+        "Maria" to 70
+    )
+
+    for ((nama, nilai) in nilaiMap) {
+        println("$nama -> $nilai")
+    }
 }
