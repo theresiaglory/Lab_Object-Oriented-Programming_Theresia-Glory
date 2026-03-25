@@ -24,4 +24,13 @@ fun main() {
 
     println("Daftar Nama:")
     namaSaja.forEach { println(it) }
+
+    println("\n=== Mutable List ===")
+
+    val angka = mutableListOf(1, 2, 3)
+
+    angka.add(4)
+    angka.remove(2)
+
+    println(angka)
 }
